@@ -74,7 +74,7 @@ const handleCardClick = (clickedCard) => {
         setMatchedCards((prev) => [...prev, firstCard.id, secondCard.id]);
         setScore((prev) => prev + 1);
         setFlippedCards([]);
-      }, 500);
+      }, 50);
     } else {
       // NOT MATCHED, flip back
       setTimeout(() => {
@@ -86,7 +86,7 @@ const handleCardClick = (clickedCard) => {
           )
         );
         setFlippedCards([]);
-      }, 500);
+      }, 100);
     }
         setMoves((prev) => prev + 1)
 
